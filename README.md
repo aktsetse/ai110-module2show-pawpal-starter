@@ -48,6 +48,24 @@ The scheduler now includes smarter planning features:
 - Detect overlapping task times and return lightweight warning messages
 - Build simple time blocks so daily plans are easier to read
 
+## Testing PawPal+
+
+Run the automated test suite with:
+
+```bash
+python -m pytest
+```
+
+What these tests cover:
+
+- Happy paths for task creation, completion updates, and pet task management
+- Sorting correctness for chronological task order
+- Recurrence logic for daily/weekly follow-up task generation
+- Conflict detection for overlapping task times
+- Edge cases like pets with no tasks
+
+Confidence Level: ★★★★☆ (4/5)
+
 ### Suggested workflow
 
 1. Read the scenario carefully and identify requirements and edge cases.
