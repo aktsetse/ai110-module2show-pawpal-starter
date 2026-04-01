@@ -2,7 +2,16 @@
 
 ## 1. System Design
 
+**Core user actions (simple version)**
+
+- The user can add their pet and basic info (name, age, type).
+- The user can add a care task, like a walk or feeding, and set how long it takes and how important it is.
+- The user can see today’s plan, so they know what to do and in what order.
+
 **a. Initial design**
+
+- I am designing a pet care app with four main classes: `Owner`, `Pet`, `Task`, and `Scheduler`.
+- Mermaid class diagram is in `class_diagram.md`.
 
 - Briefly describe your initial UML design.
 - What classes did you include, and what responsibilities did you assign to each?
