@@ -38,6 +38,16 @@ pip install -r requirements.txt
 python3 main.py
 ```
 
+## Smarter Scheduling
+
+The scheduler now includes smarter planning features:
+
+- Sort tasks by priority, duration, or scheduled time (`HH:MM`)
+- Filter tasks by pet name and completion status
+- Handle recurring tasks by auto-creating the next daily or weekly task when completed
+- Detect overlapping task times and return lightweight warning messages
+- Build simple time blocks so daily plans are easier to read
+
 ### Suggested workflow
 
 1. Read the scenario carefully and identify requirements and edge cases.

@@ -36,8 +36,10 @@
 
 **b. Tradeoffs**
 
-- Describe one tradeoff your scheduler makes.
-- Why is that tradeoff reasonable for this scenario?
+- I reviewed my conflict detection method and considered a more compact AI-suggested version (using tighter one-liners and nested comprehensions).
+- I kept my current loop-based version because it is easier to read and debug, even if it is slightly less compact.
+- One tradeoff in my scheduler is that conflict warnings are lightweight and focus on overlapping scheduled windows, not advanced optimization across all possible rearrangements.
+- This is reasonable for this project because pet owners mainly need clear warnings and a practical daily plan, not a complex optimization engine.
 
 ---
 
