@@ -12,14 +12,18 @@
 
 - I am designing a pet care app with four main classes: `Owner`, `Pet`, `Task`, and `Scheduler`.
 - Mermaid class diagram is in `class_diagram.md`.
-
-- Briefly describe your initial UML design.
-- What classes did you include, and what responsibilities did you assign to each?
+- `Owner` stores the pet owner's name, time available, and preferences.
+- `Pet` stores each pet's profile info (name, species, age, notes).
+- `Task` stores care work details (title, category, duration, priority, status).
+- `Scheduler` is responsible for building a daily plan by sorting and filtering tasks based on limits.
+- I separated data objects (`Pet`, `Task`) from planning logic (`Scheduler`) to keep the system organized and easier to test.
 
 **b. Design changes**
 
-- Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
+- Yes. After an AI-style review of `#file:pawpal_system.py`, I added missing relationship structure to the skeleton.
+- I added `pets` to `Owner` and an `add_pet()` method so "Owner has Pets" is explicit in code.
+- I added `tasks` to `Pet` and an `add_task()` method so task ownership is tied to a pet instead of floating globally.
+- I made these changes because they match the UML relationships better and reduce future scheduling confusion as the app grows.
 
 ---
 
